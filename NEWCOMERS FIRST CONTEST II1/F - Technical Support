@@ -1,0 +1,14 @@
+t = int(input())
+for i in range(t):
+    n = int(input())
+    ch = input()
+    res = 0
+    for x in ch:
+        if x == 'Q':
+        	res += 1
+        if x == 'A' and res > 0:
+            res -= 1
+    if res ==  0:
+        print('Yes')
+    else:
+        print('No')
