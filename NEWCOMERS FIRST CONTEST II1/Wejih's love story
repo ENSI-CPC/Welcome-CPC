@@ -1,0 +1,10 @@
+t = int(input())
+s = 'codeforces'
+for i in range(t):
+    ch = input()
+    count = 0
+    for j in range(10):
+        if ch[j] != s[j]:
+            count += 1
+    print(count)
+            
