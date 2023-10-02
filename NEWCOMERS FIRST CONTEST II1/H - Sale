@@ -1,0 +1,13 @@
+m,n = [int(x) for x in input().split()]
+l = [int(x) for x in input().split()]
+
+arr = []
+for x in l:
+    if x <= 0:
+        arr.append(-1*x)
+arr.sort(reverse=True)
+taille = min(len(arr),n)
+res = 0
+for i in range(taille):
+    res += arr[i]
+print(res)
