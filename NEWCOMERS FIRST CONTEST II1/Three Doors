@@ -1,0 +1,8 @@
+t=int(input())
+for i in range(t):
+    x=int(input())
+    a = [int(x) for x in input().split()]
+    if a[x-1]!=0 and a[a[x-1]-1]!=0 :
+        print('YES') 
+    else:
+        print('NO')
