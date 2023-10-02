@@ -1,0 +1,7 @@
+t = int(input())
+for i in range(t):
+    l = [int(x) for x in input().split()]
+    if l[0] + l[1] >= 10 or l[0] + l[2] >= 10 or l[1] + l[2] >= 10:
+        print('YES')
+    else:
+        print('NO')
