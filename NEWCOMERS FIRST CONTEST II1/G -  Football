@@ -1,0 +1,13 @@
+ch = input()
+zero = ''
+one = ''
+for i in range(7):
+    zero += '0'
+
+for i in range(7):
+    one += '1'
+
+if (zero in ch or one in ch):
+    print('YES')
+else:
+    print('NO')
